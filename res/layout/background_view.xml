@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+	<Spinner
+		android:id="@+id/BackgroundType"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		/>
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/BackgroundType"
+		android:layout_alignParentBottom="true"
+		>
+
+		<RelativeLayout
+			android:id="@+id/GradientPage"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			>
+
+			<RelativeLayout
+				android:id="@+id/GradientColors"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				>
+
+				<LinearLayout
+					android:id="@+id/GradientColorsCenter"
+					android:layout_width="2dip"
+					android:layout_height="8dip"
+					android:layout_centerHorizontal="true"
+					/>
+
+				<Button
+					android:id="@+id/GradientColor0"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_toLeftOf="@id/GradientColorsCenter"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="@string/first_color"
+					/>
+
+				<Button
+					android:id="@+id/GradientColor1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_toRightOf="@id/GradientColorsCenter"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="@string/second_color"
+					/>
+
+			</RelativeLayout>
+
+			<GridView
+				android:id="@+id/GradientChooser"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/GradientColors"
+				android:layout_alignParentBottom="true"
+				android:numColumns="3"
+				android:horizontalSpacing="16dip"
+				android:verticalSpacing="16dip"
+				android:gravity="center"
+				android:columnWidth="100dip"
+				android:stretchMode="columnWidth"
+				/>
+
+		</RelativeLayout>
+
+		<GridView
+			android:id="@+id/BuildinChooser"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:numColumns="3"
+			android:horizontalSpacing="16dip"
+			android:verticalSpacing="16dip"
+			android:gravity="center"
+			android:columnWidth="100dip"
+			android:stretchMode="columnWidth"
+			/>
+
+	</FrameLayout>
+
+</RelativeLayout>
