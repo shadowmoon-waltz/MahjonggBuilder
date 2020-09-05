@@ -1,0 +1,12 @@
+MahjonggBuilder was an old googlecode project for Android
+Archived and retrieved from: https://archive.softwareheritage.org/browse/origin/http://mahjonggbuilder.googlecode.com/svn//directory/
+Removed old eclipse build files and replaced with gradle build (gradle files based on those in opennotescanner)
+Increased version to 1.5
+For signing, add "SIGN_PROPS=C:\\somewhere\\mykey.properties" to a local.properties file in the repo root (create if necessary)
+That file should be of the form
+"
+keystore=C:\\somewhere\\key.jks
+keystore.password=<keystore password>
+keystore.alias=<key alias>
+keystore.alias.password=<key password>
+"

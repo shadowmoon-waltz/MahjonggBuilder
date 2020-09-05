@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+Properties properties = new Properties()
+properties.load(new FileInputStream(file(project.rootProject.file('local.properties'))))
+
+boolean signConfigExists = properties.getProperty("SIGN_PROPS") != null && new File(properties.getProperty("SIGN_PROPS")).exists()
+
+android {
+    if (signConfigExists) {
+        Properties props = new Properties()
+        props.load(new FileInputStream(file(properties.getProperty("SIGN_PROPS"))))
+        signingConfigs {
+            release {
+                storeFile file(props['keystore'])
+                storePassword props['keystore.password']
+                keyAlias props['keystore.alias']
+                keyPassword props['keystore.alias.password']
+            }
+        }
+    }
+
+    compileSdkVersion 29
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId "com.anoshenko.android.mahjongg"
+        minSdkVersion 1
+        targetSdkVersion 29
+        versionCode 15
+        versionName '1.5'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+            if(signConfigExists) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
