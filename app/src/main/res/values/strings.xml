@@ -7,7 +7,7 @@
 	<string name="version_text">Version</string>
 	<string name="license">License: GPL3\nhttp://www.gnu.org/licenses/gpl.html</string>
 	<string name="copyright">Developers: Alexei Anoshenko, Roland Meier, shadowmoon_waltz (Github updates and changes)</string>
-	<string name="home_page">Project Page:\nhttp://code.google.com/p/mahjonggbuilder/ (page is gone; archived at https://archive.softwareheritage.org/browse/origin/directory/?origin_url=http://mahjonggbuilder.googlecode.com/svn/)</string>
+	<string name="home_page">Project Page:\nhttps://github.com/shadowmoon-waltz/MahjonggBuilder\nOriginal: http://code.google.com/p/mahjonggbuilder/ (page is gone; archived at https://archive.softwareheritage.org/browse/origin/directory/?origin_url=http://mahjonggbuilder.googlecode.com/svn/)</string>
 
 	<string name="nameless">[nameless]</string>
 
