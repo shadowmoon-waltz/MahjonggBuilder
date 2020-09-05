@@ -6,8 +6,8 @@
 
 	<string name="version_text">Version</string>
 	<string name="license">License: GPL3\nhttp://www.gnu.org/licenses/gpl.html</string>
-	<string name="copyright">Developers: Alexei Anoshenko, Roland Meier</string>
-	<string name="home_page">Project Page:\nhttp://code.google.com/p/mahjonggbuilder/</string>
+	<string name="copyright">Developers: Alexei Anoshenko, Roland Meier, shadowmoon_waltz (Github updates and changes)</string>
+	<string name="home_page">Project Page:\nhttp://code.google.com/p/mahjonggbuilder/ (page is gone; archived at https://archive.softwareheritage.org/browse/origin/directory/?origin_url=http://mahjonggbuilder.googlecode.com/svn/)</string>
 
 	<string name="nameless">[nameless]</string>
 
@@ -158,6 +158,9 @@
 	<string name="pref_deal_title">Deal</string>
 	<string name="pref_deal_summary">Create easier decks.</string>
 
+  <string name="pref_sidewall_key">SIDEWALL</string>
+  <string name="pref_sidewall_title">Sidewall Size</string>
+  
 	<string name="first_color">First Color</string>
 	<string name="second_color">Second Color</string>
 

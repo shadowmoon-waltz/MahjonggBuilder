@@ -10,3 +10,5 @@ keystore.password=<keystore password>
 keystore.alias=<key alias>
 keystore.alias.password=<key password>
 "
+change sidewall size calculation in BaseActivity.java's updateZBuffer
+add preference for sidewall size (marked border size is based on this value) and add preference getter in Utils.java

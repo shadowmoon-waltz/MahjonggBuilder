@@ -117,12 +117,15 @@ public abstract class BaseActivity extends Activity implements OnToolbarListener
 
 		DisplayMetrics dm = Utils.getDisplayMetrics(this);
 
-		if (Math.min(dm.heightPixels, dm.widthPixels) >= 480) {
-			mSideWallSize = 4;
-			mMarkedBorder = 3;
-		} else {
-			mSideWallSize = 3;
-		}
+		//if (Math.min(dm.heightPixels, dm.widthPixels) >= 480) {
+		//	mSideWallSize = 4;
+		//	mMarkedBorder = 3;
+		//} else {
+		//	mSideWallSize = 3;
+		//}
+		
+		mSideWallSize = Math.max(2, Utils.getSideWallSize(this));
+		mMarkedBorder = Math.max(3, (int)(mSideWallSize * 0.75f));
 
 		final int layer_width		= getLayerWidth();
 		final int layer_height		= getLayerHeight();

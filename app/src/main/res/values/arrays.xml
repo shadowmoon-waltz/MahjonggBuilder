@@ -38,7 +38,7 @@
 
 	<string-array name="background_type_item_values">
 		<item>Gradient</item>
-		<item>Build-in image</item>
+		<item>Built-in image</item>
 		<!--item>Gallery</item-->
 	</string-array>
 

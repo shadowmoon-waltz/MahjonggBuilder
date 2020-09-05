@@ -224,4 +224,24 @@ public class Utils {
 			activity.setRequestedOrientation(new_orientation);
 		}
 	}
+
+	final static int getSideWallSize(Activity activity) {
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(activity);
+
+		final String value = prefs.getString(activity.getString(R.string.pref_sidewall_key), "4");
+		try
+		{
+      final int i = Integer.parseInt(value);
+      if (i > 0)
+      {
+        return i;
+      }
+    }
+    catch (Exception e)
+    {
+    
+    }
+    return 4;
+  }
+
 }
