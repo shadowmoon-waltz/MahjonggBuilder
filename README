@@ -17,3 +17,4 @@ add preference for sidewall size (marked border size is based on this value) and
 
 run "gradlew clean" in repo root to clean up compiled stuff
 to build, follow signing notes above if you want automatic signing during build and then run "gradlew assembleRelease" in repo root
+apk written to app/build/outputs/apk/release/app-release.apk in repo root
