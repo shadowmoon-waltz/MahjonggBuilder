@@ -1,7 +1,9 @@
 apply plugin: 'com.android.application'
 
 Properties properties = new Properties()
-properties.load(new FileInputStream(file(project.rootProject.file('local.properties'))))
+if (project.rootProject.file('local.properties').canRead()) {
+    properties.load(new FileInputStream(project.rootProject.file('local.properties')))
+}
 
 boolean signConfigExists = properties.getProperty("SIGN_PROPS") != null && new File(properties.getProperty("SIGN_PROPS")).exists()
 
