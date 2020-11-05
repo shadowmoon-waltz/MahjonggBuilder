@@ -1,7 +1,7 @@
 MahjonggBuilder
 ===============
 
-MahjonggBuilder was an old googlecode project for Android, which was retrieved from an [archive] (https://archive.softwareheritage.org/browse/origin/http://mahjonggbuilder.googlecode.com/svn//directory/).
+MahjonggBuilder was an old googlecode project for Android, which was retrieved from an archive located at https://archive.softwareheritage.org/browse/origin/http://mahjonggbuilder.googlecode.com/svn//directory/
 
 Build changes
 -------------
